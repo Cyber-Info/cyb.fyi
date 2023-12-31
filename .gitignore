@@ -1,0 +1,102 @@
+#   _____      _                 _____        __
+#  / ____|    | |               |_   _|      / _|
+# | |    _   _| |__   ___ _ __    | |  _ __ | |_ ___
+# | |   | | | | '_ \ / _ \ '__|   | | | '_ \|  _/ _ \
+# | |___| |_| | |_) |  __/ |     _| |_| | | | || (_) |
+#  \_____\__, |_.__/ \___|_|    |_____|_| |_|_| \___/
+#         __/ |
+#        |___/
+# https://cyber.info
+
+# GitHub: https://help.github.com/articles/ignoring-files/
+
+# Logs and Diagnostic reports
+# Includes npm, yarn, lerna, pnpm, bun logs, and Node.js reports
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+bun-debug.log*
+
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data and PID files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and Instrumentation
+coverage
+*.lcov
+.nyc_output
+lib-cov
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Grunt, Bower, and Parcel Bundler Caches
+.grunt
+bower_components
+.cache
+.parcel-cache
+
+# Compiled Outputs and Dependency Directories
+build/Release
+node_modules/
+jspm_packages/
+web_modules/
+*.tsbuildinfo
+.nuxt
+dist
+.next
+out
+.cache/
+.vuepress/dist
+.temp
+.docusaurus
+
+# pnpm
+.pnp.*
+.pnpm-store/
+
+# Development Tools and Editors
+# Includes JetBrains IDEs, VSCode, Serverless, FuseBox, DynamoDB, TernJS
+.idea/**/*
+.vscode-test
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+
+# File-based Project Format
+# JetBrains file-based project format
+*.iws
+
+# Miscellaneous Files
+# Includes REPL history, npm pack output, Yarn integrity, dotenv files, etc.
+.node_repl_history
+*.tgz
+.yarn-integrity
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.DS_Store
+*.pem
+
+# TypeScript and Vercel
+next-env.d.ts
+.vercel
+
+# Sentry Config File
+.sentryclirc
+
+# Wrangler
+wrangler.toml
+.wrangler

@@ -1,0 +1,21 @@
+{
+  "name": "cyb.fyi",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "biome-lint": "pnpm dlx @biomejs/biome lint .",
+    "biome-lint:fix": "pnpm dlx @biomejs/biome lint . --apply",
+    "biome-format": "pnpm dlx @biomejs/biome format .",
+    "biome-format:fix": "pnpm dlx @biomejs/biome format . --write",
+    "format": "pnpm biome-lint:fix && pnpm biome-format:fix"
+  },
+  "dependencies": {
+    "hono": "^3.11.11"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.4.1",
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "wrangler": "^3.22.0"
+  }
+}

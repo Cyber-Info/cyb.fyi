@@ -1,0 +1,13 @@
+name = "project-name"
+compatibility_date = "2023-01-01"
+
+kv_namespaces = [
+    { binding = "kv-binding", id = "kv-id", preview_id = "kv-preview-id" }
+]
+
+[vars]
+HOST_URL = "https://example.com"
+HOST_DOMAIN = "example.com"
+LINK_KV_BINDING = "kv-binding"
+STATUS_PAGE_URL = "status.example.com"
+DEFAULT_LOCATION = "https://notfound.test"
