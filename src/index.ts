@@ -97,12 +97,13 @@ app.get("/:slug", async (c) => {
         await logAnalytics(c.req, slug, destination, env);
         return c.redirect(destination, 301);
     }
-    return c.redirect("https://cyber.info", 302);
+    return c.redirect(`${env.DEFAULT_LOCATION}`, 302);
 });
 
 // Handler for not found routes.
 app.notFound((c) => {
-    return c.redirect("https://cyber.info", 302);
+    const env: Env = c.env as Env;
+    return c.redirect(`${env.DEFAULT_LOCATION}`, 302);
 });
 
 export default app;
